@@ -2,6 +2,7 @@ package com.chargebee.creditmanagement;
 
 import com.chargebee.creditmanagement.controllers.Controller;
 import com.chargebee.creditmanagement.models.data.ServicePricing;
+import com.chargebee.creditmanagement.models.data.Transaction;
 import com.chargebee.creditmanagement.models.data.UserCredit;
 import com.chargebee.creditmanagement.models.enums.CreditPackageType;
 import com.chargebee.creditmanagement.models.requests.CreateServicePricingRequest;
@@ -84,7 +85,8 @@ public class MultiThreadedScript {
             Thread.sleep(10);
         }
 
-        System.out.println(controller.viewAllTransactions(userId));
+        List<Transaction> transactionList = controller.viewAllTransactions(userId);
+        System.out.println(transactionList.size() + " " + transactionList);
 
         UserCredit userCredit = controller.getUserCredit(userId);
         System.out.println("User credits: " + userCredit);

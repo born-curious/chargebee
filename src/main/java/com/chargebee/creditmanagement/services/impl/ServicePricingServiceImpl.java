@@ -8,6 +8,7 @@ import com.chargebee.creditmanagement.models.data.ServicePricing;
 import com.chargebee.creditmanagement.models.data.Transaction;
 import com.chargebee.creditmanagement.models.data.UserCredit;
 import com.chargebee.creditmanagement.models.enums.TransactionStatus;
+import com.chargebee.creditmanagement.models.exceptions.NotFoundException;
 import com.chargebee.creditmanagement.models.requests.CreateServicePricingRequest;
 import com.chargebee.creditmanagement.models.requests.ServiceUsageRequest;
 import com.chargebee.creditmanagement.models.requests.UpdateServicePricingRequest;
@@ -59,15 +60,21 @@ public class ServicePricingServiceImpl implements ServicePricingService {
     public Transaction utilizeService(ServiceUsageRequest serviceUsageRequest) {
         ValidationUtils.validateServiceUsageRequest(serviceUsageRequest);
         ServicePricing servicePricing = servicePricingDao.getServicePricing(serviceUsageRequest.getServiceId());
-        UserCredit userCredit = userCreditService.getUserCreditForUpdate(serviceUsageRequest.getUserId());
-        TransactionStatus status = (userCredit.getCreditsAvailable().compareTo(servicePricing.getUsageCost()) < 0)
-                ? TransactionStatus.REJECTED : TransactionStatus.ACCEPTED;
-        Transaction transaction = transactionService.createTransaction(serviceUsageRequest,
-                servicePricing.getUsageCost(), status);
-        if (TransactionStatus.ACCEPTED == status) {
-            userCreditService.updateUserCredit(userCredit, transaction);
+        try {
+            UserCredit userCredit = userCreditService.getUserCreditForUpdate(serviceUsageRequest.getUserId());
+            TransactionStatus status = (userCredit.getCreditsAvailable().compareTo(servicePricing.getUsageCost()) < 0)
+                    ? TransactionStatus.REJECTED : TransactionStatus.ACCEPTED;
+            Transaction transaction = transactionService.createTransaction(serviceUsageRequest,
+                    servicePricing.getUsageCost(), status);
+            if (TransactionStatus.ACCEPTED == status) {
+                userCreditService.updateUserCredit(userCredit, transaction);
+            }
+            return transaction;
+        } catch (NotFoundException nfe) {
+            transactionService.createTransaction(serviceUsageRequest, servicePricing.getUsageCost(),
+                    TransactionStatus.REJECTED);
+            throw nfe;
         }
-        return transaction;
     }
 
     public static ServicePricingServiceImpl getInstance() {
