@@ -1,0 +1,13 @@
+createCreditPackage, <creditPackageType>, <cost>, <credits>
+updateCreditPackage, <creditPackageType>, <updatedCost>, <updatedCredits>
+getCreditPackage, <creditPackageType>
+viewAllPackages
+purchaseCredits, <creditPackageType>, <userId>
+createServicePricing, <serviceName>, <usageCost>
+updateServicePricing, <serviceId>, <updatedUsageCost>
+getServicePricing, <serviceId>
+viewAllServicePricing
+utilizeService, <serviceId>, <userId>
+getTransaction, <transactionId>
+viewAllTransactions, <userId>
+getUserCredit, <userId>

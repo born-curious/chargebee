@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>/Users/ishaan.chawla/chargebee/chargebee/src/main/java/com/chargebee/creditmanagement</OriginalElement>
+  <nodes>
+    <node x="-101.0" y="774.0">com.chargebee.creditmanagement.models.enums.TransactionType</node>
+    <node x="6983.829819277109" y="89.0">com.chargebee.creditmanagement.adaptors.CreateServicePricingRequestAdaptor</node>
+    <node x="2349.0" y="774.0">com.chargebee.creditmanagement.models.exceptions.ValidationException</node>
+    <node x="4905.704819277109" y="54.5">com.chargebee.creditmanagement.services.CreditPackageService</node>
+    <node x="4325.0" y="774.0">com.chargebee.creditmanagement.constants.Constants</node>
+    <node x="948.0" y="1020.0">com.chargebee.creditmanagement.models.requests.PurchaseCreditPackageRequest</node>
+    <node x="3059.7048192771094" y="100.5">com.chargebee.creditmanagement.datastores.impl.CreditPackageDatastore</node>
+    <node x="1869.9999999999998" y="89.0">com.chargebee.creditmanagement.adaptors.PurchaseCreditPackageRequestAdaptor</node>
+    <node x="1865.0" y="774.0">com.chargebee.creditmanagement.models.data.ServicePricing</node>
+    <node x="6265.829819277109" y="66.0">com.chargebee.creditmanagement.daos.ServicePricingDao</node>
+    <node x="3614.9548192771094" y="468.0">com.chargebee.creditmanagement.services.impl.CreditPackageServiceImpl</node>
+    <node x="2216.0" y="878.0">com.chargebee.creditmanagement.utils.ValidationUtils</node>
+    <node x="3151.0" y="774.0">com.chargebee.creditmanagement.models.requests.CreateServicePricingRequest</node>
+    <node x="2273.0" y="100.5">com.chargebee.creditmanagement.models.exceptions.NotFoundException</node>
+    <node x="3880.0" y="774.0">com.chargebee.creditmanagement.Main</node>
+    <node x="1156.0" y="77.5">com.chargebee.creditmanagement.daos.TransactionDao</node>
+    <node x="5780.829819277109" y="54.5">com.chargebee.creditmanagement.services.ServicePricingService</node>
+    <node x="3771.7048192771094" y="100.5">com.chargebee.creditmanagement.models.exceptions.AlreadyExistsException</node>
+    <node x="3138.8298192771094" y="479.5">com.chargebee.creditmanagement.daos.impl.CreditPackageDaoImpl</node>
+    <node x="-44.25" y="974.0">com.chargebee.creditmanagement.models.data.Transaction</node>
+    <node x="1394.0" y="997.0">com.chargebee.creditmanagement.models.data.CreditPackage</node>
+    <node x="475.0" y="997.0">com.chargebee.creditmanagement.models.requests.CreditPackageRequest</node>
+    <node x="6287.621485943776" y="468.0">com.chargebee.creditmanagement.services.impl.ServicePricingServiceImpl</node>
+    <node x="6594.829819277109" y="89.0">com.chargebee.creditmanagement.adaptors.UpdateServicePricingRequestAdaptor</node>
+    <node x="4557.704819277109" y="89.0">com.chargebee.creditmanagement.adaptors.CreditPackageRequestAdaptor</node>
+    <node x="170.0" y="774.0">com.chargebee.creditmanagement.models.enums.TransactionStatus</node>
+    <node x="1026.5" y="774.0">com.chargebee.creditmanagement.models.enums.CreditPackageType</node>
+    <node x="1740.5798192771094" y="479.5">com.chargebee.creditmanagement.services.impl.TransactionServiceImpl</node>
+    <node x="1529.9999999999998" y="89.0">com.chargebee.creditmanagement.adaptors.ServiceUsageRequestAdaptor</node>
+    <node x="2748.0" y="774.0">com.chargebee.creditmanagement.models.requests.UpdateServicePricingRequest</node>
+    <node x="3365.7048192771094" y="66.0">com.chargebee.creditmanagement.daos.CreditPackageDao</node>
+    <node x="4034.704819277109" y="66.0">com.chargebee.creditmanagement.services.TransactionService</node>
+    <node x="5476.829819277109" y="100.5">com.chargebee.creditmanagement.datastores.impl.ServicePricingDatastore</node>
+    <node x="867.0" y="100.5">com.chargebee.creditmanagement.datastores.impl.TransactionDatastore</node>
+    <node x="1252.3298192771094" y="491.0">com.chargebee.creditmanagement.daos.impl.TransactionDaoImpl</node>
+    <node x="-101.0" y="19.0">com.chargebee.creditmanagement.models.data.UserCredit</node>
+    <node x="4979.329819277109" y="376.0">com.chargebee.creditmanagement.controllers.Controller</node>
+    <node x="3551.0" y="774.0">com.chargebee.creditmanagement.models.requests.ServiceUsageRequest</node>
+    <node x="5464.329819277109" y="479.5">com.chargebee.creditmanagement.daos.impl.ServicePricingDaoImpl</node>
+    <node x="549.0" y="-271.0">com.chargebee.creditmanagement.datastores.LockableConcurrentHashMap</node>
+    <node x="632.8298192771094" y="468.0">com.chargebee.creditmanagement.daos.impl.UserCreditDaoImpl</node>
+    <node x="2653.7048192771094" y="54.5">com.chargebee.creditmanagement.services.UserCreditService</node>
+    <node x="584.0" y="100.5">com.chargebee.creditmanagement.datastores.impl.UserCreditDatastore</node>
+    <node x="196.0" y="54.5">com.chargebee.creditmanagement.daos.UserCreditDao</node>
+    <node x="4091.0" y="774.0">com.chargebee.creditmanagement.utils.IdGeneratorUtil</node>
+    <node x="211.57981927710944" y="468.0">com.chargebee.creditmanagement.services.impl.UserCreditServiceImpl</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.chargebee.creditmanagement.daos.impl.TransactionDaoImpl" target="com.chargebee.creditmanagement.daos.TransactionDao" relationship="REALIZATION">
+      <point x="0.0" y="-61.5" />
+      <point x="1429.3298192771094" y="276.0" />
+      <point x="1244.5" y="276.0" />
+      <point x="-88.5" y="50.0" />
+    </edge>
+    <edge source="com.chargebee.creditmanagement.services.impl.ServicePricingServiceImpl" target="com.chargebee.creditmanagement.services.UserCreditService" relationship="TO_ONE">
+      <point x="116.25" y="-84.5" />
+      <point x="6636.371485943776" y="286.0" />
+      <point x="4174.333333333333" y="286.0" />
+      <point x="4174.333333333333" y="276.0" />
+      <point x="2943.2048192771094" y="276.0" />
+      <point x="96.5" y="73.0" />
+    </edge>
+    <edge source="com.chargebee.creditmanagement.services.impl.ServicePricingServiceImpl" target="com.chargebee.creditmanagement.daos.ServicePricingDao" relationship="TO_ONE">
+      <point x="116.25" y="-84.5" />
+      <point x="6636.371485943776" y="266.0" />
+      <point x="6497.579819277109" y="266.0" />
+      <point x="77.25" y="61.5" />
+    </edge>
+    <edge source="com.chargebee.creditmanagement.models.requests.PurchaseCreditPackageRequest" target="com.chargebee.creditmanagement.models.enums.CreditPackageType" relationship="TO_ONE">
+      <point x="0.0" y="-108.5" />
+      <point x="0.0" y="86.5" />
+    </edge>
+    <edge source="com.chargebee.creditmanagement.utils.ValidationUtils" target="com.chargebee.creditmanagement.models.exceptions.ValidationException" relationship="CREATE">
+      <point x="0.0" y="-73.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="com.chargebee.creditmanagement.services.impl.UserCreditServiceImpl" target="com.chargebee.creditmanagement.models.data.UserCredit" relationship="CREATE">
+      <point x="-128.66666666666606" y="-84.5" />
+      <point x="275.9131526104434" y="356.0" />
+      <point x="37.5" y="356.0" />
+      <point x="0.0" y="108.5" />
+    </edge>
+    <edge source="com.chargebee.creditmanagement.services.impl.TransactionServiceImpl" target="com.chargebee.creditmanagement.adaptors.PurchaseCreditPackageRequestAdaptor" relationship="TO_ONE">
+      <point x="-125.75" y="-73.0" />
+      <point x="1866.3298192771094" y="356.0" />
+      <point x="1712.650100401607" y="356.0" />
+      <point x="1712.650100401607" y="266.0" />
+      <point x="2061.5" y="266.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="com.chargebee.creditmanagement.services.impl.ServicePricingServiceImpl" target="com.chargebee.creditmanagement.adaptors.CreateServicePricingRequestAdaptor" relationship="TO_ONE">
+      <point x="116.25" y="-84.5" />
+      <point x="6636.371485943776" y="266.0" />
+      <point x="7166.329819277109" y="266.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="com.chargebee.creditmanagement.daos.impl.UserCreditDaoImpl" target="com.chargebee.creditmanagement.datastores.impl.UserCreditDatastore" relationship="TO_ONE">
+      <point x="0.0" y="-84.5" />
+      <point x="816.8298192771094" y="286.0" />
+      <point x="715.5" y="286.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="com.chargebee.creditmanagement.daos.impl.CreditPackageDaoImpl" target="com.chargebee.creditmanagement.daos.CreditPackageDao" relationship="REALIZATION">
+      <point x="128.66666666666606" y="-73.0" />
+      <point x="3460.4964859437755" y="296.0" />
+      <point x="3462.2048192771094" y="296.0" />
+      <point x="-96.5" y="61.5" />
+    </edge>
+    <edge source="com.chargebee.creditmanagement.services.impl.TransactionServiceImpl" target="com.chargebee.creditmanagement.adaptors.ServiceUsageRequestAdaptor" relationship="TO_ONE">
+      <point x="-125.75" y="-73.0" />
+      <point x="1866.3298192771094" y="356.0" />
+      <point x="1712.650100401607" y="356.0" />
+      <point x="1712.650100401607" y="266.0" />
+      <point x="1689.9999999999998" y="266.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="com.chargebee.creditmanagement.daos.impl.ServicePricingDaoImpl" target="com.chargebee.creditmanagement.daos.ServicePricingDao" relationship="REALIZATION">
+      <point x="103.0" y="-73.0" />
+      <point x="5721.829819277109" y="356.0" />
+      <point x="6343.079819277109" y="356.0" />
+      <point x="-77.25" y="61.5" />
+    </edge>
+    <edge source="com.chargebee.creditmanagement.services.impl.ServicePricingServiceImpl" target="com.chargebee.creditmanagement.services.TransactionService" relationship="TO_ONE">
+      <point x="116.25" y="-84.5" />
+      <point x="6636.371485943776" y="276.0" />
+      <point x="4674.025100401607" y="276.0" />
+      <point x="4674.025100401607" y="256.0" />
+      <point x="4411.954819277109" y="256.0" />
+      <point x="125.75" y="61.5" />
+    </edge>
+    <edge source="com.chargebee.creditmanagement.daos.impl.TransactionDaoImpl" target="com.chargebee.creditmanagement.models.exceptions.NotFoundException" relationship="CREATE">
+      <point x="118.0" y="-61.5" />
+      <point x="1547.3298192771094" y="346.0" />
+      <point x="2641.7048192771094" y="346.0" />
+      <point x="2641.7048192771094" y="286.0" />
+      <point x="2383.5" y="286.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="com.chargebee.creditmanagement.services.impl.TransactionServiceImpl" target="com.chargebee.creditmanagement.daos.TransactionDao" relationship="TO_ONE">
+      <point x="-125.75" y="-73.0" />
+      <point x="1866.3298192771094" y="356.0" />
+      <point x="1712.650100401607" y="356.0" />
+      <point x="1712.650100401607" y="266.0" />
+      <point x="1421.5" y="266.0" />
+      <point x="88.5" y="50.0" />
+    </edge>
+    <edge source="com.chargebee.creditmanagement.controllers.Controller" target="com.chargebee.creditmanagement.services.TransactionService" relationship="TO_ONE">
+      <point x="0.0" y="-176.5" />
+      <point x="5211.829819277109" y="296.0" />
+      <point x="4674.025100401607" y="296.0" />
+      <point x="4674.025100401607" y="256.0" />
+      <point x="4411.954819277109" y="256.0" />
+      <point x="125.75" y="61.5" />
+    </edge>
+    <edge source="com.chargebee.creditmanagement.controllers.Controller" target="com.chargebee.creditmanagement.services.UserCreditService" relationship="TO_ONE">
+      <point x="0.0" y="-176.5" />
+      <point x="5211.829819277109" y="306.0" />
+      <point x="4174.333333333333" y="306.0" />
+      <point x="4174.333333333333" y="276.0" />
+      <point x="2943.2048192771094" y="276.0" />
+      <point x="96.5" y="73.0" />
+    </edge>
+    <edge source="com.chargebee.creditmanagement.models.data.Transaction" target="com.chargebee.creditmanagement.models.enums.TransactionType" relationship="TO_ONE">
+      <point x="0.0" y="-200.5" />
+      <point x="162.25" y="949.0" />
+      <point x="24.5" y="949.0" />
+      <point x="0.0" y="75.0" />
+    </edge>
+    <edge source="com.chargebee.creditmanagement.datastores.impl.UserCreditDatastore" target="com.chargebee.creditmanagement.datastores.LockableConcurrentHashMap" relationship="GENERALIZATION">
+      <point x="0.0" y="-27.0" />
+      <point x="0.0" y="120.0" />
+    </edge>
+    <edge source="com.chargebee.creditmanagement.models.data.Transaction" target="com.chargebee.creditmanagement.models.enums.TransactionStatus" relationship="TO_ONE">
+      <point x="0.0" y="-200.5" />
+      <point x="162.25" y="949.0" />
+      <point x="300.0" y="949.0" />
+      <point x="0.0" y="75.0" />
+    </edge>
+    <edge source="com.chargebee.creditmanagement.services.impl.CreditPackageServiceImpl" target="com.chargebee.creditmanagement.services.CreditPackageService" relationship="REALIZATION">
+      <point x="145.0" y="-84.5" />
+      <point x="3977.4548192771094" y="336.0" />
+      <point x="5014.454819277109" y="336.0" />
+      <point x="-108.75" y="73.0" />
+    </edge>
+    <edge source="com.chargebee.creditmanagement.daos.impl.UserCreditDaoImpl" target="com.chargebee.creditmanagement.daos.UserCreditDao" relationship="REALIZATION">
+      <point x="-122.66666666666606" y="-84.5" />
+      <point x="694.1631526104434" y="286.0" />
+      <point x="472.0" y="286.0" />
+      <point x="92.0" y="73.0" />
+    </edge>
+    <edge source="com.chargebee.creditmanagement.services.impl.TransactionServiceImpl" target="com.chargebee.creditmanagement.services.TransactionService" relationship="REALIZATION">
+      <point x="125.75" y="-73.0" />
+      <point x="2117.8298192771094" y="306.0" />
+      <point x="4160.454819277109" y="306.0" />
+      <point x="-125.75" y="61.5" />
+    </edge>
+    <edge source="com.chargebee.creditmanagement.services.impl.CreditPackageServiceImpl" target="com.chargebee.creditmanagement.daos.CreditPackageDao" relationship="TO_ONE">
+      <point x="0.0" y="-84.5" />
+      <point x="3832.4548192771094" y="356.0" />
+      <point x="4006.749999999999" y="356.0" />
+      <point x="4006.749999999999" y="266.0" />
+      <point x="3655.2048192771094" y="266.0" />
+      <point x="96.5" y="61.5" />
+    </edge>
+    <edge source="com.chargebee.creditmanagement.daos.impl.ServicePricingDaoImpl" target="com.chargebee.creditmanagement.models.exceptions.NotFoundException" relationship="CREATE">
+      <point x="-103.0" y="-73.0" />
+      <point x="5515.829819277109" y="346.0" />
+      <point x="2641.7048192771094" y="346.0" />
+      <point x="2641.7048192771094" y="286.0" />
+      <point x="2383.5" y="286.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="com.chargebee.creditmanagement.daos.impl.ServicePricingDaoImpl" target="com.chargebee.creditmanagement.datastores.impl.ServicePricingDatastore" relationship="TO_ONE">
+      <point x="0.0" y="-73.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="com.chargebee.creditmanagement.services.impl.ServicePricingServiceImpl" target="com.chargebee.creditmanagement.adaptors.UpdateServicePricingRequestAdaptor" relationship="TO_ONE">
+      <point x="116.25" y="-84.5" />
+      <point x="6636.371485943776" y="266.0" />
+      <point x="6779.329819277109" y="266.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="com.chargebee.creditmanagement.models.data.CreditPackage" target="com.chargebee.creditmanagement.models.enums.CreditPackageType" relationship="TO_ONE">
+      <point x="0.0" y="-131.5" />
+      <point x="1607.0" y="972.0" />
+      <point x="1161.0" y="972.0" />
+      <point x="0.0" y="86.5" />
+    </edge>
+    <edge source="com.chargebee.creditmanagement.services.impl.CreditPackageServiceImpl" target="com.chargebee.creditmanagement.adaptors.CreditPackageRequestAdaptor" relationship="TO_ONE">
+      <point x="0.0" y="-84.5" />
+      <point x="3832.4548192771094" y="356.0" />
+      <point x="4006.749999999999" y="356.0" />
+      <point x="4006.749999999999" y="266.0" />
+      <point x="4721.704819277109" y="266.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="com.chargebee.creditmanagement.daos.impl.TransactionDaoImpl" target="com.chargebee.creditmanagement.datastores.impl.TransactionDatastore" relationship="TO_ONE">
+      <point x="-118.0" y="-61.5" />
+      <point x="1311.3298192771094" y="286.0" />
+      <point x="1001.5" y="286.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="com.chargebee.creditmanagement.models.requests.CreditPackageRequest" target="com.chargebee.creditmanagement.models.enums.CreditPackageType" relationship="TO_ONE">
+      <point x="0.0" y="-131.5" />
+      <point x="701.5" y="972.0" />
+      <point x="1161.0" y="972.0" />
+      <point x="0.0" y="86.5" />
+    </edge>
+    <edge source="com.chargebee.creditmanagement.services.impl.CreditPackageServiceImpl" target="com.chargebee.creditmanagement.models.exceptions.AlreadyExistsException" relationship="CREATE">
+      <point x="-145.0" y="-84.5" />
+      <point x="3687.4548192771094" y="296.0" />
+      <point x="3893.2048192771094" y="296.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="com.chargebee.creditmanagement.daos.impl.CreditPackageDaoImpl" target="com.chargebee.creditmanagement.models.exceptions.NotFoundException" relationship="CREATE">
+      <point x="-128.66666666666606" y="-73.0" />
+      <point x="3203.1631526104434" y="346.0" />
+      <point x="2641.7048192771094" y="346.0" />
+      <point x="2641.7048192771094" y="286.0" />
+      <point x="2383.5" y="286.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="com.chargebee.creditmanagement.services.impl.UserCreditServiceImpl" target="com.chargebee.creditmanagement.services.UserCreditService" relationship="REALIZATION">
+      <point x="128.66666666666606" y="-84.5" />
+      <point x="533.2464859437755" y="296.0" />
+      <point x="2750.2048192771094" y="296.0" />
+      <point x="-96.5" y="73.0" />
+    </edge>
+    <edge source="com.chargebee.creditmanagement.services.impl.CreditPackageServiceImpl" target="com.chargebee.creditmanagement.services.UserCreditService" relationship="TO_ONE">
+      <point x="0.0" y="-84.5" />
+      <point x="3832.4548192771094" y="356.0" />
+      <point x="4006.749999999999" y="356.0" />
+      <point x="4006.749999999999" y="316.0" />
+      <point x="4174.333333333333" y="316.0" />
+      <point x="4174.333333333333" y="276.0" />
+      <point x="2943.2048192771094" y="276.0" />
+      <point x="96.5" y="73.0" />
+    </edge>
+    <edge source="com.chargebee.creditmanagement.services.impl.ServicePricingServiceImpl" target="com.chargebee.creditmanagement.services.ServicePricingService" relationship="REALIZATION">
+      <point x="-116.25" y="-84.5" />
+      <point x="6403.871485943776" y="346.0" />
+      <point x="6129.579819277109" y="346.0" />
+      <point x="116.25" y="73.0" />
+    </edge>
+    <edge source="com.chargebee.creditmanagement.services.impl.CreditPackageServiceImpl" target="com.chargebee.creditmanagement.services.TransactionService" relationship="TO_ONE">
+      <point x="0.0" y="-84.5" />
+      <point x="3832.4548192771094" y="356.0" />
+      <point x="4006.749999999999" y="356.0" />
+      <point x="4006.749999999999" y="326.0" />
+      <point x="4674.025100401607" y="326.0" />
+      <point x="4674.025100401607" y="256.0" />
+      <point x="4411.954819277109" y="256.0" />
+      <point x="125.75" y="61.5" />
+    </edge>
+    <edge source="com.chargebee.creditmanagement.daos.impl.CreditPackageDaoImpl" target="com.chargebee.creditmanagement.datastores.impl.CreditPackageDatastore" relationship="TO_ONE">
+      <point x="0.0" y="-73.0" />
+      <point x="3331.8298192771094" y="296.0" />
+      <point x="3202.7048192771094" y="296.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="com.chargebee.creditmanagement.services.impl.UserCreditServiceImpl" target="com.chargebee.creditmanagement.daos.UserCreditDao" relationship="TO_ONE">
+      <point x="0.0" y="-84.5" />
+      <point x="404.57981927710944" y="356.0" />
+      <point x="288.0" y="356.0" />
+      <point x="-92.0" y="73.0" />
+    </edge>
+    <edge source="com.chargebee.creditmanagement.controllers.Controller" target="com.chargebee.creditmanagement.services.CreditPackageService" relationship="TO_ONE">
+      <point x="0.0" y="-176.5" />
+      <point x="5211.829819277109" y="336.0" />
+      <point x="5231.954819277109" y="336.0" />
+      <point x="108.75" y="73.0" />
+    </edge>
+    <edge source="com.chargebee.creditmanagement.controllers.Controller" target="com.chargebee.creditmanagement.services.ServicePricingService" relationship="TO_ONE">
+      <point x="0.0" y="-176.5" />
+      <point x="5211.829819277109" y="336.0" />
+      <point x="5897.079819277109" y="336.0" />
+      <point x="-116.25" y="73.0" />
+    </edge>
+    <edge source="com.chargebee.creditmanagement.daos.impl.UserCreditDaoImpl" target="com.chargebee.creditmanagement.models.exceptions.NotFoundException" relationship="CREATE">
+      <point x="122.66666666666606" y="-84.5" />
+      <point x="939.4964859437755" y="346.0" />
+      <point x="2641.7048192771094" y="346.0" />
+      <point x="2641.7048192771094" y="286.0" />
+      <point x="2383.5" y="286.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.43639776218932963" showDependencies="true" x="8509.5" y="-78.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+
